@@ -1,0 +1,29 @@
+.main-div{
+  height: 90%;
+}
+div{
+  padding-left: 10%;
+  text-align: center;
+  div#upload {
+    button {
+      width: 200px;
+      height: 40px;
+    }
+  }
+  ul {
+    text-align: left;
+    list-style: none;
+    li {
+      a {
+        color: black;
+        font-weight: 400;
+      }
+      a:hover {
+        color: blue;
+      }
+      a:active {
+        color: blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<table class="table table-striped table-responsive-md btn-table">
+
+  <thead>
+  <tr>
+    <th>User name</th>
+    <th>Email</th>
+    <th>Status</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <td>{{user.username}}</td>
+    <td>{{user.email}}</td>
+    <td>
+      <button [hidden]='user.enabled' mdbBtn color="primary" outline="true" size="sm" mdbWavesEffect type="button"
+              class="m-0" (click)="approve(user)">Approve
+      </button>
+      <button [hidden]='!user.enabled' mdbBtn color="primary" outline="true" size="sm" mdbWavesEffect type="button"
+              class="m-0" (click)="disapprove(user)">Disable
+      </button>
+    </td>
+  </tr>
+  </tbody>
+
+</table>
